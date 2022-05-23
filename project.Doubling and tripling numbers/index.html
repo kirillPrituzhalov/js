@@ -9,17 +9,18 @@
 </head>
 <body>
   <nav class="navbar">
-    <h1 class="nav-brand">Celsius to Fahrenheit converter</h1>
+    <h1 class="nav-brand">Double or Triple number</h1>
   </nav>
   
   <main class="container">
-    <div>
-      <label class="label" for="c-input">Enter the number in Celsius</label>
-      <input type="number" class="input" placeholder="Number" id="c-input" autocomplete="off"> <span
-            class="unit">Celsius is</span>
-      <input type="number" class="input" placeholder="Result" disabled id="f-output" autocomplete="off">
-        Fahrenheit
+    <div class="app-grid">
+      <input type="number" class="input" id="input" placeholder="Enter a number" />
+      <button class="btn btn-default" id="operation-double">Double</button>
+      <button class="btn btn-default" id="operation-triple">Triple</button>
     </div>
+  
+    <h3>Result</h3>
+    <input type="text" class="input" id="output" readonly disabled />
   </main>
   <script type="module" src="js/index.js"></script>
 </body>
